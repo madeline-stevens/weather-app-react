@@ -5,6 +5,9 @@ import Form from "./components/Form";
 import Weather from "./components/Weather";
 import Forecast from "./components/Forecast";
 import Daytwo from "./components/Daytwo";
+import Daythree from "./components/Daythree";
+import Dayfour from "./components/Dayfour";
+import Dayfive from "./components/Dayfive";
 
 import _ from "lodash";
 import moment from "moment";
@@ -85,6 +88,27 @@ class App extends Component {
       descriptionThree: result[1].weather[0].weather[0].description,
       error: ""
     });
+    this.setState({
+      dt_txt2: result[2].date,
+      temp_min2: result[2].weather[0].main.temp_min,
+      temp_max2: result[2].weather[0].main.temp_max,
+      descriptionFour: result[2].weather[0].weather[0].description,
+      error: ""
+    });
+    this.setState({
+      dt_txt3: result[3].date,
+      temp_min3: result[3].weather[0].main.temp_min,
+      temp_max3: result[3].weather[0].main.temp_max,
+      descriptionFive: result[3].weather[0].weather[0].description,
+      error: ""
+    });
+    this.setState({
+      dt_txt4: result[4].date,
+      temp_min4: result[4].weather[0].main.temp_min,
+      temp_max4: result[4].weather[0].main.temp_max,
+      descriptionSix: result[4].weather[0].weather[0].description,
+      error: ""
+    });
   };
 
   render() {
@@ -110,7 +134,25 @@ class App extends Component {
           dt_txt1={this.state.dt_txt1}
           temp_min1={this.state.temp_min1}
           temp_max1={this.state.temp_max1}
-          descriptionThree1={this.state.descriptionThree}
+          descriptionThree={this.state.descriptionThree}
+        />
+        <Daythree
+          dt_txt2={this.state.dt_txt2}
+          temp_min2={this.state.temp_min2}
+          temp_max2={this.state.temp_max2}
+          descriptionFour={this.state.descriptionFour}
+        />
+        <Dayfour
+          dt_txt3={this.state.dt_txt3}
+          temp_min3={this.state.temp_min3}
+          temp_max3={this.state.temp_max3}
+          descriptionFive={this.state.descriptionFive}
+        />
+        <Dayfive
+          dt_txt4={this.state.dt_txt4}
+          temp_min4={this.state.temp_min4}
+          temp_max4={this.state.temp_max4}
+          descriptionSix={this.state.descriptionSix}
         />
       </div>
     );
