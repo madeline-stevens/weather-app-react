@@ -6,6 +6,7 @@ class Forecast extends Component {
       <div>
         {this.props.temp_min &&
           this.props.temp_max && <h3>Five Day Forecast</h3>}
+
         <div>{this.props.dt_txt && <p> day: {this.props.dt_txt}</p>}</div>
         {this.props.temp_max && (
           <p>

@@ -28,8 +28,16 @@ This React app allows you to search for current weather by city or zipcode. I us
 - [ ] Convert the date to a day of the week with .getDay().
 - [ ] Restrict to US only.
 
+# Tech Stack
+
+- React
+- JavaScript(ES6)
+- HTML 5
+
 # Resources
 
 1. React tutorial: https://www.youtube.com/watch?v=204C9yNeOYI
 2. OpenWeatherMap docs- https://openweathermap.org
-3. Friends/mentors: Eddie, Gavin, Michelle, Don, Google
+3. Noteworthy packages: create-react-app, lodash, moment, axious (Gavin suggested axious- it's similar to fetch but boasts better data manipulation)
+4. This person's readme- https://github.com/Gigacore/react-weather-forecast
+5. Friends/mentors: Eddie, Gavin, Michelle, Don, Google
