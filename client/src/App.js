@@ -70,16 +70,17 @@ class App extends Component {
           .format("MMM DD YYYY")
           .toLocaleUpperCase()
       )
-      .map((weather, date) => ({ date, weather })) //using ES6 shorthand to generate the objects
+      .map((weather, date) => ({ date, weather }))
+      //using ES6 shorthand to generate the objects
       .value();
 
     console.log("results:", result);
 
     this.setState({
-      dt_txt: fiveDayData.list[0].dt_txt,
-      temp_min: fiveDayData.list[0].main.temp_min,
-      temp_max: fiveDayData.list[0].main.temp_max,
-      descriptionTwo: fiveDayData.list[0].weather[0].description,
+      dt_txt: result[0].date,
+      temp_min: result[0].weather[0].main.temp_min,
+      temp_max: result[0].weather[0].main.temp_max,
+      descriptionTwo: result[0].weather[0].weather[0].description,
       error: ""
     });
   };
