@@ -27,7 +27,6 @@ This React app allows you to search for current weather by city or zipcode. I us
 - [ ] Once my server.js is functional, I need to get my .env file out of the client side.
 - [ ] Convert the date to a day of the week with .getDay().
 - [ ] Restrict to US only.
-- [ ] Get rid of unnecessary config files within scripts folder. (These were revealed after ejecting from CRA, becuase I thought I needed to eject in order to manipulate them if need be. Turns out I didn't.)
 
 # Resources
 
