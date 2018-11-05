@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Forecast extends Component {
+class Dayone extends Component {
   render() {
     return (
       <div>
@@ -33,4 +33,4 @@ class Forecast extends Component {
   }
 }
 
-export default Forecast;
+export default Dayone;

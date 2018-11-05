@@ -4,8 +4,7 @@ class Dayfour extends Component {
   render() {
     return (
       <div>
-        {this.props.temp_min3 &&
-          this.props.temp_max3 && <h3>the rest of the Five Day Forecast</h3>}
+        {this.props.temp_min3 && this.props.temp_max3}
 
         <div>{this.props.dt_txt3 && <p> day: {this.props.dt_txt3}</p>}</div>
 

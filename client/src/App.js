@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Title from "./components/Title";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
-import Forecast from "./components/Forecast";
+import Dayone from "./components/Dayone";
 import Daytwo from "./components/Daytwo";
 import Daythree from "./components/Daythree";
 import Dayfour from "./components/Dayfour";
@@ -124,7 +124,7 @@ class App extends Component {
           description={this.state.description}
           error={this.state.error}
         />
-        <Forecast
+        <Dayone
           dt_txt={this.state.dt_txt}
           temp_min={this.state.temp_min}
           temp_max={this.state.temp_max}

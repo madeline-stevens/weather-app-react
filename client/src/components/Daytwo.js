@@ -4,8 +4,7 @@ class Daytwo extends Component {
   render() {
     return (
       <div>
-        {this.props.temp_min1 &&
-          this.props.temp_max1 && <h3>the rest of the Five Day Forecast</h3>}
+        {this.props.temp_min1 && this.props.temp_max1}
 
         <div>{this.props.dt_txt1 && <p> day: {this.props.dt_txt1}</p>}</div>
 
