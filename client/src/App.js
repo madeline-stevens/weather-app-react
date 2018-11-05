@@ -4,6 +4,7 @@ import Title from "./components/Title";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
 import Forecast from "./components/Forecast";
+// import _ from "lodash";
 
 import dotenv from "dotenv";
 dotenv.config();
@@ -61,6 +62,17 @@ class App extends Component {
     //     ? console.log("same day", data)
     //     : console.log("not same day");
     // });
+
+    // var result = _.chain(fiveDayData)
+    //   .groupBy(datum =>
+    //     moment(datum.start_date)
+    //       .format("MMM DD YYYY")
+    //       .toLocaleUpperCase()
+    //   )
+    //   .map((messages, date) => ({ date, messages })) //using ES6 shorthand to generate the objects
+    //   .value();
+
+    // console.log(result);
 
     this.setState({
       dt_txt: fiveDayData.list[0].dt_txt,
