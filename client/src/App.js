@@ -57,13 +57,6 @@ class App extends Component {
     const fiveDayData = await fiveDay_call.json();
     console.log("five day data:", fiveDayData);
 
-    // fiveDayData.list.map((data, index) => {
-    //   return data.dt_txt.split(" ")[0] ===
-    //     fiveDayData.list[index + 1].dt_txt.split(" ")[0]
-    //     ? console.log("same day", data)
-    //     : console.log("not same day");
-    // });
-
     var result = _.chain(fiveDayData.list)
       .groupBy(datum =>
         moment(datum.dt_txt)
