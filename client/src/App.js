@@ -4,6 +4,8 @@ import Title from "./components/Title";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
 import Forecast from "./components/Forecast";
+import Daytwo from "./components/Daytwo";
+
 import _ from "lodash";
 import moment from "moment";
 
@@ -76,6 +78,13 @@ class App extends Component {
       descriptionTwo: result[0].weather[0].weather[0].description,
       error: ""
     });
+    this.setState({
+      dt_txt1: result[1].date,
+      temp_min1: result[1].weather[0].main.temp_min,
+      temp_max1: result[1].weather[0].main.temp_max,
+      descriptionThree: result[1].weather[0].weather[0].description,
+      error: ""
+    });
   };
 
   render() {
@@ -96,6 +105,12 @@ class App extends Component {
           temp_min={this.state.temp_min}
           temp_max={this.state.temp_max}
           descriptionTwo={this.state.descriptionTwo}
+        />
+        <Daytwo
+          dt_txt1={this.state.dt_txt1}
+          temp_min1={this.state.temp_min1}
+          temp_max1={this.state.temp_max1}
+          descriptionThree1={this.state.descriptionThree}
         />
       </div>
     );
