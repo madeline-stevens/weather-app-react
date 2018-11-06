@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Weather extends Component {
+class Current extends Component {
   render() {
     return (
       <div>
@@ -26,4 +26,4 @@ class Weather extends Component {
   }
 }
 
-export default Weather;
+export default Current;

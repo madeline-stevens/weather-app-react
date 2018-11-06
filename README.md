@@ -18,16 +18,17 @@ This React app allows you to search for current weather by city or zipcode. I us
 
 # To do:
 
-- [x] Use Create React App to set up initial scaffolding.
+- [x] Use Create-React-App to set up initial scaffolding.
 - [x] Search functionality by zipcode and city, returning current weather data(city, country, current temp, humidity, weather conditions).
 - [x] Hardcoded rendering of the first index of five day forecast array (meant to be a placeholder).
-- [x] I used lodash .groupBy and moment to write a function in App.js that groups the five days together. And I now have the first day placeholder reading from that lodash/moment grouping!
-- [ ] That functionality that groups days together will allow us to manipulate, and render to the dom the five day forecast.
-- [ ] Finish server.js, currently it is not affecting the client side, but I would like this proxy server to be able to get data from the client side, manipulate it, send it back.
+- [x] I used lodash .groupBy and moment to write a function in App.js that groups the five days together.
+- [ ] Render five day forecast to the dom with functionality for calculating highest and lowest temps for each day.
+- [ ] Finish server.js (currently it is not affecting the client side, but I would like this proxy server to be able to get data from the client side, manipulate it, send it back.
 - [ ] Once my server.js is functional, I need to get my .env file out of the client side.
 - [ ] Convert the date to a day of the week with .getDay().
 - [ ] Restrict to US only.
 - [ ] Convert temps from decimal to whole number.
+- [ ] Chart weather data with D3 or Formidable Labs (recommendation from Gavin).
 
 # Tech Stack
 

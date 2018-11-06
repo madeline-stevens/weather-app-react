@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Title from "./components/Title";
 import Form from "./components/Form";
-import Weather from "./components/Weather";
+import Current from "./components/Current";
 import Dayone from "./components/Dayone";
 import Daytwo from "./components/Daytwo";
 import Daythree from "./components/Daythree";
@@ -116,7 +116,7 @@ class App extends Component {
       <div className="App">
         <Title />
         <Form weatherAPIcall={this.weatherAPIcall} />
-        <Weather
+        <Current
           temperature={this.state.temperature}
           city={this.state.city}
           country={this.state.country}
