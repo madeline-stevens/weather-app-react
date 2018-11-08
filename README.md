@@ -29,6 +29,7 @@ This React app allows you to search for current weather by city or zipcode. I us
 - [ ] Restrict to US only.
 - [ ] Convert temps from decimal to whole number.
 - [ ] Chart weather data with D3 or Formidable Labs (recommendation from Gavin).
+- [ ] Error message for nonexistent city search.
 
 # Tech Stack
 

@@ -49,6 +49,10 @@ class App extends Component {
     //current temp
     const data = await temp_call.json();
     console.log(data);
+
+    // if data !== country: "US"
+    // return error message
+
     this.setState({
       temperature: data.main.temp,
       city: data.name,
@@ -62,7 +66,7 @@ class App extends Component {
     const fiveDayData = await fiveDay_call.json();
     console.log("five day data:", fiveDayData);
 
-    var result = _.chain(fiveDayData.list)
+    const result = _.chain(fiveDayData.list)
       .groupBy(datum =>
         moment(datum.dt_txt)
           .format("MMM DD YYYY")
@@ -73,6 +77,26 @@ class App extends Component {
       .value();
 
     console.log("results:", result);
+
+    //Calculating each days high and low temp
+    //For each day, grab the min and max (so i'll have about five of each), then add then and divide to get average???
+    // result.map(oneDay => {
+    //   oneDay.weather.map(day => {
+    //     console.log("This is your individual day to do what you please", day);
+    //   });
+    // });
+
+    // return results.map(result => {
+    //   let totalHighTemp = 0;
+    //   let totalLowTemp = 0;
+    //   return result.weather.map(day => {
+    //     //Maybe you want to find averages?
+    //     //IDK what the actual day looks like so I'm guessing on keys.
+    //     day.highTemp + totalHighTemp;
+    //     day.lowTemp + totalLowTemp;
+    //   });
+    //   console.log(totalHighTemp / result.length, totalLowTemp / result.length);
+    // });
 
     this.setState({
       dt_txt: result[0].date,

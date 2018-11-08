@@ -4,8 +4,6 @@ class Daythree extends Component {
   render() {
     return (
       <div>
-        {this.props.temp_min2 && this.props.temp_max2}
-
         <div>{this.props.dt_txt2 && <p> day: {this.props.dt_txt2}</p>}</div>
 
         {this.props.temp_max2 && (
