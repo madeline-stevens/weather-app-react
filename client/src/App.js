@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { Button } from "reactstrap";
 
 import Title from "./components/Title";
 import Form from "./components/Form";
+import Example from "./components/Card";
 import Current from "./components/Current";
 import Dayone from "./components/Dayone";
 import Daytwo from "./components/Daytwo";
@@ -148,6 +150,8 @@ class App extends Component {
           description={this.state.description}
           error={this.state.error}
         />
+        <Example />
+
         <Dayone
           dt_txt={this.state.dt_txt}
           temp_min={this.state.temp_min}

@@ -22,6 +22,7 @@ This React app allows you to search for current weather by city or zipcode. I us
 - [x] Search functionality by zipcode and city, returning current weather data(city, country, current temp, humidity, weather conditions).
 - [x] Hardcoded rendering of the first index of five day forecast array (meant to be a placeholder).
 - [x] I used lodash .groupBy and moment to write a function in App.js that groups the five days together.
+- [x] Add bootstrap for React with (npm install --save reactstrap react react-dom, npm install bootstrap --save, import 'bootstrap/dist/css/bootstrap.min.css';)
 - [ ] Render five day forecast to the dom with functionality for calculating highest and lowest temps for each day.
 - [ ] Finish server.js (currently it is not affecting the client side, but I would like this proxy server to be able to get data from the client side, manipulate it, send it back.
 - [ ] Once my server.js is functional, I need to get my .env file out of the client side.
@@ -42,4 +43,5 @@ This React app allows you to search for current weather by city or zipcode. I us
 1. React tutorial: https://www.youtube.com/watch?v=204C9yNeOYI
 2. OpenWeatherMap docs- https://openweathermap.org
 3. Noteworthy packages: create-react-app, lodash, moment, axious (Gavin suggested axious- it's similar to fetch but boasts better data manipulation)
-4. Friends/mentors: Eddie, Gavin, Michelle, Don
+4. https://facebook.github.io/create-react-app/docs/adding-bootstrap
+5. Friends/mentors: Eddie, Gavin, Michelle, Don

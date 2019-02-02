@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import Example from "./components/Card";
 
 class Daytwo extends Component {
   render() {
